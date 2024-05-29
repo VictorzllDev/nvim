@@ -27,3 +27,6 @@ lspconfig.tsserver.setup {
     }
   }
 }
+lspconfig.cssls.setup {
+  capabilities = capabilities
+}

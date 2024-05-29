@@ -10,6 +10,8 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "css-lsp",
+        "lua-language-server",
         "prettier",
         "typescript-language-server"
       }
