@@ -9,6 +9,12 @@ local M = {
     css = {
       require("formatter.filetypes.css").prettier
     },
+    javascriptreact = {
+      require("formatter.filetypes.javascript").prettier
+    },
+    typescriptreact = {
+      require("formatter.filetypes.typescript").prettier
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }
