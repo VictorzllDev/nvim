@@ -30,11 +30,11 @@ lspconfig.tsserver.setup {
 }
 
 lspconfig.cssls.setup {
+  on_attach = on_attach,
   capabilities = capabilities
 }
 
-lspconfig.pyright.setup {
+lspconfig.ruff_lsp.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"python"}
 }
