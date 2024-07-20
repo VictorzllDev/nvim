@@ -10,6 +10,7 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "prisma-language-server",
         "tailwindcss-language-server",
         "ruff-lsp",
         "css-lsp",

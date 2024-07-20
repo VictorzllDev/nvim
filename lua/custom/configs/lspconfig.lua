@@ -55,3 +55,8 @@ lspconfig.tailwindcss.setup {
     },
   },
 }
+
+lspconfig.prismals.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
