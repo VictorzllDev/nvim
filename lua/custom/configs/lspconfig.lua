@@ -38,3 +38,20 @@ lspconfig.ruff_lsp.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+lspconfig.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {'javascriptreact', 'typescriptreact', 'css'},
+  settings = {
+    tailwindCSS = {
+      experimental = {
+        classRegex = {
+          "clsx\\(([^)]*)\\)",
+          "classnames\\(([^)]*)\\)",
+          "style\\(['\"]([^'\"]*)['\"]\\)",
+        },
+      },
+    },
+  },
+}

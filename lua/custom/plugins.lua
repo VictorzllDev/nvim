@@ -10,7 +10,8 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "pyright",
+        "tailwindcss-language-server",
+        "ruff-lsp",
         "css-lsp",
         "lua-language-server",
         "prettier",
