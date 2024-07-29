@@ -13,12 +13,14 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
+lspconfig.biome.setup {}
+
 lspconfig.tsserver.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   init_options = {
     preferences = {
-      disableSuggestions = true,
+      disableSuggestions = false,
     }
   },
   commands = {
@@ -42,7 +44,7 @@ lspconfig.ruff_lsp.setup {
 lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {'javascriptreact', 'typescriptreact', 'css'},
+  filetypes = { 'javascriptreact', 'typescriptreact', 'css' },
   settings = {
     tailwindCSS = {
       experimental = {
