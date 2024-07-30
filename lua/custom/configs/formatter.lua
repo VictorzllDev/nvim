@@ -15,6 +15,9 @@ local M = {
     typescriptreact = {
       require("formatter.filetypes.typescript").biome
     },
+    json = {
+      require("formatter.filetypes.json").biome
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }
