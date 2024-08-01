@@ -18,6 +18,9 @@ local M = {
     json = {
       require("formatter.filetypes.json").biome
     },
+    rust = {
+      require("formatter.filetypes.rust").rustfmt
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }

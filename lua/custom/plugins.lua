@@ -11,6 +11,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "biome",
+        "rust-analyzer",
         "prisma-language-server",
         "tailwindcss-language-server",
         "ruff-lsp",

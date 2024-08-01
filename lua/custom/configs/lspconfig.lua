@@ -31,6 +31,11 @@ lspconfig.tsserver.setup {
   }
 }
 
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 lspconfig.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities
