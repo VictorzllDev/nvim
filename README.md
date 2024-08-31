@@ -15,6 +15,7 @@ Esta configuração inclui os seguintes servidores LSP:
 - **lua-language-server**
 - **prettier**
 - **typescript-language-server**
+- **ccls**
 
 ### Treesitter
 
@@ -33,6 +34,7 @@ O Treesitter está configurado para garantir que os seguintes parsers sejam inst
 - **json5**
 - **vim**
 - **vimdoc**
+- **cpp**
 
 ## Contribuição
 
