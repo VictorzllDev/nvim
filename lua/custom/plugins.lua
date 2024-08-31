@@ -18,7 +18,8 @@ local plugins = {
         "css-lsp",
         "lua-language-server",
         "prettier",
-        "typescript-language-server"
+        "typescript-language-server",
+        "html-lsp"
       }
     }
   },
