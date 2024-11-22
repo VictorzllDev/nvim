@@ -14,25 +14,23 @@ Esta configuração inclui os seguintes servidores LSP:
 - **tailwindcss-language-server**
 - **typescript-language-server**
 
-Essa organização coloca os servidores LSP em ordem alfabética para facilitar a visualização.
 ### Treesitter
 
 O Treesitter está configurado para garantir que os seguintes parsers sejam instalados:
 
-- **typescript**
-- **javascript**
-- **tsx**
-- **rust**
-- **prisma**
-- **python**
-- **lua**
-- **html**
 - **css**
+- **html**
+- **javascript**
 - **json**
 - **json5**
+- **lua**
+- **prisma**
+- **python**
+- **rust**
+- **tsx**
+- **typescript**
 - **vim**
 - **vimdoc**
-- **cpp**
 
 ## Contribuição
 
