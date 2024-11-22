@@ -1,22 +1,20 @@
-# Configuração do Neovim com NVChad
-
-Este repositório contém a configuração personalizada do Neovim baseada no NVChad, incluindo suporte para servidores LSP e integração com o Treesitter.
+Aqui está a lista de servidores LSP em ordem alfabética:
 
 ### LSP (Language Server Protocol)
 
 Esta configuração inclui os seguintes servidores LSP:
 
 - **biome**
-- **rust-analyzer**
-- **prisma-language-server**
-- **tailwindcss-language-server**
-- **ruff-lsp**
 - **css-lsp**
 - **lua-language-server**
+- **prisma-language-server**
 - **prettier**
+- **ruff-lsp**
+- **rust-analyzer**
+- **tailwindcss-language-server**
 - **typescript-language-server**
-- **ccls**
 
+Essa organização coloca os servidores LSP em ordem alfabética para facilitar a visualização.
 ### Treesitter
 
 O Treesitter está configurado para garantir que os seguintes parsers sejam instalados:
