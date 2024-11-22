@@ -13,39 +13,40 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
+-- Biome Language Server: LSP para o ambiente Biome, oferecendo suporte para desenvolvimento em TypeScript/JavaScript.
 lspconfig.biome.setup {}
 
-lspconfig.ts_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  init_options = {
-    preferences = {
-      disableSuggestions = false,
-    }
-  },
-  commands = {
-    OrganizeImports = {
-      organize_imports,
-      description = "Organize Imports",
-    }
-  }
-}
-
-lspconfig.rust_analyzer.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
+-- CSS Language Server: Suporte para CSS, SCSS e Less, com recursos como autocompletar e linting.
 lspconfig.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-lspconfig.ruff_lsp.setup {
+-- HTML Language Server: Suporte para HTML, incluindo validação de sintaxe, formatação e autocompletar.
+lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
+-- Prisma Language Server: Oferece autocompletar e verificação de tipos para arquivos de esquema Prisma.
+lspconfig.prismals.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+-- Rust Analyzer: LSP para Rust, com recursos como completamento de código, diagnósticos e dicas de código (inlay hints).
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+-- Ruff LSP: Um linter rápido para Python, com foco em desempenho e conformidade com o PEP8.
+lspconfig.ruff.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+-- Tailwind CSS Language Server: Suporte ao Tailwind CSS, incluindo autocompletar para classes CSS.
 lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -63,14 +64,20 @@ lspconfig.tailwindcss.setup {
   },
 }
 
-lspconfig.prismals.setup {
+-- TypeScript/JavaScript Language Server: Suporte para TypeScript e JavaScript, com recursos como completamento de código e verificação de erros.
+lspconfig.ts_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = false,
+    }
+  },
+  commands = {
+    OrganizeImports = {
+      organize_imports,
+      description = "Organizar Imports",
+    }
+  }
 }
 
-lspconfig.ccls.setup {}
-
-lspconfig.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
