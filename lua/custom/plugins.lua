@@ -1,5 +1,12 @@
 local plugins = {
   {
+    "Exafunction/codeium.vim",
+    event = 'BufEnter',
+    config = function()
+      return require "custom.configs.codeium"
+    end
+  },
+  {
     "mhartington/formatter.nvim",
     event = "VeryLazy",
     opts = function()
