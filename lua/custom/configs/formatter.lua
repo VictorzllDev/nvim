@@ -1,13 +1,16 @@
 local M = {
   filetype = {
+    html = {
+      require("formatter.filetypes.html").prettier
+    },
+    css = {
+      require("formatter.filetypes.css").prettier
+    },
     javascript = {
       require("formatter.filetypes.javascript").biome
     },
     typescript = {
       require("formatter.filetypes.typescript").biome
-    },
-    css = {
-      require("formatter.filetypes.css").prettier
     },
     javascriptreact = {
       require("formatter.filetypes.javascript").biome
@@ -20,6 +23,9 @@ local M = {
     },
     rust = {
       require("formatter.filetypes.rust").rustfmt
+    },
+    go = {
+      require("formatter.filetypes.go").gofmt
     },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace

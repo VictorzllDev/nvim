@@ -22,6 +22,12 @@ lspconfig.cssls.setup {
   capabilities = capabilities
 }
 
+-- Golang Language Server: LSP para desenvolvimento em Go.
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 -- HTML Language Server: Suporte para HTML, incluindo validação de sintaxe, formatação e autocompletar.
 lspconfig.html.setup {
   on_attach = on_attach,
@@ -80,4 +86,3 @@ lspconfig.ts_ls.setup {
     }
   }
 }
-

@@ -19,6 +19,7 @@ local plugins = {
       ensure_installed = {
         "biome",
         "css-lsp",
+        "gopls",
         "html-lsp",
         "lua-language-server",
         "prisma-language-server",

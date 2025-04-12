@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "css", "html", "javascript", "json", "json5", "lua", "prisma", "python", "rust", "tsx", "typescript", "vim", "vimdoc" },
+  ensure_installed = { "go", "css", "html", "javascript", "json", "json5", "lua", "prisma", "python", "rust", "tsx", "typescript", "vim", "vimdoc" },
 
   highlight = {
     enable = true,
