@@ -21,5 +21,8 @@ return {
 	{
 		"Exafunction/codeium.vim",
 		event = "BufEnter",
+		config = function()
+			require("configs.codeium")
+		end,
 	},
 }
