@@ -6,7 +6,7 @@ return {
 		javascript = { "biome" },
 		javascriptreact = { "biome" },
 		json = { "biome" },
-		lua = { "stylua", "luafmt" },
+		lua = { "stylua" },
 		python = { "ruff" },
 		rust = { "rustfmt" },
 		typescript = { "biome" },
@@ -15,7 +15,8 @@ return {
 	},
 
 	format_on_save = {
-		timeout_ms = 500,
+		timeout_ms = 5000,
 		lsp_fallback = true,
+		async = true,
 	},
 }
