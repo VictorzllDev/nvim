@@ -1,37 +1,25 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
-    opts = function()
-      require "configs.conform"
-    end,
-  },
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function()
-      require "configs.treesitter"
-    end,
-  },
-  {
-    "Exafunction/codeium.vim",
-    event = "BufEnter",
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = function()
-      require "configs.mason"
-    end,
-  },
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
+	{
+		"williamboman/mason.nvim",
+		opts = require("configs.mason"),
+	},
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			require("configs.lspconfig")
+		end,
+	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		opts = require("configs.treesitter"),
+	},
+	{
+		"stevearc/conform.nvim",
+		event = "BufWritePre", -- uncomment for format on save
+		opts = require("configs.conform"),
+	},
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+	},
 }
