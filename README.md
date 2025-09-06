@@ -41,13 +41,12 @@ Este ambiente oferece suporte completo a múltiplas linguagens, com realce de si
 | ![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white)                    | `css-lsp`                     | CSS intelligence                |
 | ![Go](https://img.shields.io/badge/Go-00ADD8.svg?style=for-the-badge&logo=go&logoColor=white)                           | `gopls`                       | Go language server              |
 | ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)                  | `html-lsp`                    | HTML support                    |
+| ![PHP](https://img.shields.io/badge/PHP-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)                        | `intelephense`                | PHP language server             |
 | ![Lua](https://img.shields.io/badge/Lua-2C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)                        | `lua-language-server`         | Lua language server             |
 | ![Prisma](https://img.shields.io/badge/Prisma-2D4D7F.svg?style=for-the-badge&logo=prisma&logoColor=white)                | `prisma-language-server`      | Prisma ORM support              |
-| ![Prettier](https://img.shields.io/badge/Prettier-FFB13D.svg?style=for-the-badge&logo=prettier&logoColor=black)          | `prettier`                    | Code formatter                  |
-| ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)                | `ruff-lsp`                    | Python linter                   |
-| ![Rust](https://img.shields.io/badge/Rust-000000.svg?style=for-the-badge&logo=rust&logoColor=white)                     | `rust-analyzer`               | Rust language server            |
 | ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)  | `tailwindcss-language-server` | Tailwind CSS support            |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)    | `typescript-language-server`  | TypeScript support              |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)    | `ts_ls`                       | TypeScript support              |
+| ![YAML](https://img.shields.io/badge/YAML-000000.svg?style=for-the-badge&logo=yaml&logoColor=white)                      | `yamlls`                      | YAML support                    |
 
 </div>
 
@@ -62,14 +61,18 @@ Este ambiente oferece suporte completo a múltiplas linguagens, com realce de si
 | `<M-[>`          | Insert    | Sugestão anterior              |
 | `<C-x>`          | Insert    | Limpar sugestão                |
 | `<M-Bslash>`     | Insert    | Forçar completar               |
-| `<D-l>`          | Insert    | Aceitar próxima palavra (Mac)  |
+| `<M-l>`          | Insert    | Aceitar próxima palavra        |
 
 </div>
 
 ## 🚀 Instalação Rápida
 
 ```bash
-git clone https://github.com/VictorzllDev/nvim && nvim
+# Clone o repositório para o diretório de configuração do Neovim
+git clone https://github.com/VictorzllDev/nvim.git ~/.config/nvim
+
+# Inicie o Neovim para instalar os plugins automaticamente
+nvim
 ```
 
 <p align="center"> Feito com ❤️ por <a href="https://github.com/VictorzllDev">Victor</a> </p>
