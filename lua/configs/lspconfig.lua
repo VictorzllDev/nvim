@@ -10,14 +10,16 @@ local capabilities = nvlsp.capabilities
 
 -- lsps
 local servers = {
-	"biome",
-	"cssls",
-	"gopls",
-	"html",
-	"prismals",
-	"lua_ls",
-	"tailwindcss",
-  "ts_ls"
+	"biome", -- JavaScript/TypeScript formatter + linter
+	"cssls", -- CSS language server
+	"gopls", -- Go language server
+	"html", -- HTML language server
+	"intelephense", -- PHP language server
+	"prismals", -- Prisma ORM language server
+	"lua_ls", -- Lua language server
+	"tailwindcss", -- Tailwind CSS language server
+	"ts_ls", -- TypeScript/JavaScript language server
+	"yamlls", -- YAML language server
 }
 
 -- lsps with default config

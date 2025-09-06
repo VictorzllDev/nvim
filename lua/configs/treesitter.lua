@@ -6,6 +6,7 @@ return {
 		"javascript", -- JavaScript syntax
 		"tsx", -- TypeScript with JSX support
 		"typescript", -- TypeScript syntax
+		"php", -- PHP syntax
 
 		-- Backend Languages
 		"go", -- Go syntax and indentation
