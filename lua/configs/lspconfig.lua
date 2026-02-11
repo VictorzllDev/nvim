@@ -15,6 +15,7 @@ local servers = {
 	"gopls", -- Go language server
 	"html", -- HTML language server
 	"intelephense", -- PHP language server
+	"marksman", -- Markdown language server
 	"prismals", -- Prisma ORM language server
 	"lua_ls", -- Lua language server
 	"tailwindcss", -- Tailwind CSS language server
