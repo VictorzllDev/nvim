@@ -25,4 +25,10 @@ return {
 			require("configs.codeium")
 		end,
 	},
+	{
+		"vyfor/cord.nvim",
+		build = ":Cord update",
+		event = "VeryLazy",
+		opts = require("configs.cord"),
+	},
 }
