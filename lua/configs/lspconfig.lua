@@ -1,7 +1,6 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-local lspconfig = require("lspconfig")
 local nvlsp = require("nvchad.configs.lspconfig")
 
 local on_attach = nvlsp.on_attach
@@ -25,9 +24,10 @@ local servers = {
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup({
+	vim.lsp.config[lsp] = {
 		on_attach = on_attach,
 		on_init = on_init,
 		capabilities = capabilities,
-	})
+	}
+	vim.lsp.enable(lsp)
 end
