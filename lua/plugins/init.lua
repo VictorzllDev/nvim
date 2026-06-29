@@ -19,10 +19,10 @@ return {
 		opts = require("configs.conform"),
 	},
 	{
-		"Exafunction/codeium.vim",
+		"github/copilot.vim",
 		event = "BufEnter",
 		config = function()
-			require("configs.codeium")
+			require("configs.copilot")
 		end,
 	},
 	{
